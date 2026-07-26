@@ -21,6 +21,12 @@ class Settings(BaseSettings):
 
     log_level: str = "INFO"
 
+    http_client_timeout: float = 30.0
+
+    http_connect_timeout: float = 10.0
+
+    logging_level: str = "INFO"
+
     model_config = SettingsConfigDict(
         env_file=".env",
         case_sensitive=False,

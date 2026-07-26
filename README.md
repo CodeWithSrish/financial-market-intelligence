@@ -21,23 +21,35 @@ A production-grade Financial Market Intelligence Platform built on Google Cloud 
 - Docker
 - Terraform
 
-Financial Market Intelligence Platform
-
-├── Overview
-├── Architecture Diagram
-├── Features
-├── Tech Stack
-├── Repository Structure
-├── Data Sources
-├── Medallion Architecture
-├── Project Roadmap
-├── Setup Instructions
-├── Running the Project
-├── Testing
-├── CI/CD
-├── Screenshots
-├── Future Enhancements
-└── License
+Financial Market Intelligence Platform project architecture
+                    Configuration
+                          │
+                          ▼
+                     Logging
+                          │
+                          ▼
+                    Exceptions
+                          │
+                          ▼
+                 Base HTTP Client
+                          │
+          ┌───────────────┼────────────────┐
+          ▼               ▼                ▼
+    CoinGecko      AlphaVantage      News API
+          │               │                │
+          └───────────────┼────────────────┘
+                          ▼
+                    Bronze Layer (GCS)
+                          ▼
+                  Validation (Pandera)
+                          ▼
+                    Silver Layer
+                          ▼
+                  BigQuery Warehouse
+                          ▼
+                 Looker Studio Dashboard
+                          ▼
+               AI Executive Market Reports
 
 ## Engineering Foundation
 
