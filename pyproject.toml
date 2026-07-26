@@ -1,0 +1,25 @@
+[project]    # this will define project metadata
+name = "financial-market-intelligence"
+version = "0.1.0"
+description = "Production-grade Financial Market Intelligence Platform on Google Cloud."
+readme = "README.md"
+requires-python = ">=3.12"
+
+dependencies = [
+    "pydantic>=2.9",
+    "pydantic-settings>=2.5",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.6",
+]
+
+[tool.ruff]
+line-length = 88
+target-version = "py312"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
