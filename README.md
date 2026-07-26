@@ -20,3 +20,40 @@ A production-grade Financial Market Intelligence Platform built on Google Cloud 
 - BigQuery
 - Docker
 - Terraform
+
+Financial Market Intelligence Platform
+
+├── Overview
+├── Architecture Diagram
+├── Features
+├── Tech Stack
+├── Repository Structure
+├── Data Sources
+├── Medallion Architecture
+├── Project Roadmap
+├── Setup Instructions
+├── Running the Project
+├── Testing
+├── CI/CD
+├── Screenshots
+├── Future Enhancements
+└── License
+
+## Engineering Foundation
+
+Completed:
+
+- ✅ Modern Python project setup with `uv`
+- ✅ Centralized configuration management using Pydantic Settings
+- ✅ Structured logging framework
+- ✅ Custom exception hierarchy
+
+## Networking Layer
+
+Planned:
+
+- Reusable HTTP client
+- Configurable timeouts
+- Structured logging integration
+- Custom exception integration
+- Future support for multiple financial APIs
