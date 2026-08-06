@@ -1,0 +1,3 @@
+"""
+Bronze layer storage.
+"""
